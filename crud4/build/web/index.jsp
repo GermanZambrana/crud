@@ -8,6 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/estilos.css">
         <title>Tarjeta Grafica - German Zambrana Ruiz</title>
     </head>
 
@@ -24,7 +25,7 @@
                     ResultSet listado = s.executeQuery("SELECT * FROM tarjeta_grafica");
                 %>
 
-                <table class="striped">
+                <table class="t1">
                     <tr><th>ID</th><th>Tipo</th><th>Marca</th><th>Modelo</th><th>Precio</th></tr>
                     <form method="get" action="grabaTarjeta.jsp">
                         <tr><td><input type="text" name="tarjeta_id" size="5"></td>
@@ -69,7 +70,7 @@
 
             </div>
 
-            <div class="uno">German Zambrana Ruiz</div>
+            <div class="names">German Zambrana Ruiz</div>
 
         </div>
     </body>

@@ -11,11 +11,13 @@
   <body>
     <%
       Class.forName("com.mysql.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/crud","root", "root");
+      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/crud","root", "");
       Statement s = conexion.createStatement();
 
-      s.execute ("DELETE FROM graficas WHERE socioID=" + request.getParameter("codigo"));
+      s.execute ("DELETE FROM graficas WHERE modelo=" + request.getParameter("modelo"));
+      
+      s.close();
     %>	
-    <script>document.location = "pidegraficas.jsp"</script> 
+    <script>document.location = "index.jsp"</script> 
   </body>
 </html>

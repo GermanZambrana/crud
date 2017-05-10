@@ -42,7 +42,7 @@
       conexion.close();
     %>
     <br>
-    <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</a>
+    <a href="index.jsp"><span></span> Página principal</a>
 
   </body>
 </html>

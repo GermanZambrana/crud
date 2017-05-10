@@ -8,6 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/estilos.css">
         <title>Tarjeta Grafica - German Zambrana Ruiz</title>
     </head>
     <body>
@@ -30,6 +31,6 @@
             conexion.close();
         %>
         <br>
-        <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</a>
+        <a href="index.jsp" class=""><span></span> Página principal</a>
     </body>
 </html>

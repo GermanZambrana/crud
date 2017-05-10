@@ -13,10 +13,11 @@
     </head>
 
     <body>
-        <div class="container">
+       <div class="todo">
+        <div >
             <br><br>			
-            <div class="panel panel-primary">
-                <div class="uno"><h2>Tarjeta Grafica</h2></div>
+            <div>
+                <div class="uno"><h2>Gestión de tarjetas gráficas</h2></div>
                 <%
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/crud3", "root", "");
@@ -33,7 +34,7 @@
                             <td><input type="text" name="marca" size="5"></td>
                             <td><input type="text" name="modelo" size="5"></td>
                             <td><input type="text" name="precio" size="20"></td>
-                            <td><button type="submit" value="Añadir" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
+                            <td><button type="submit" value="Añadir" class="boton"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
                     </form>
                     <%
                         while (listado.next()) {
@@ -51,13 +52,13 @@
                             <input type="hidden" name="marca" value="<%=listado.getString("marca")%>">
                             <input type="hidden" name="modelo" value="<%=listado.getString("modelo")%>">
                             <input type="hidden" name="precio" value="<%=listado.getString("precio")%>">
-                            <button type="submit"  class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
+                            <button type="submit"  class="boton"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
                         </form>
                     </td>
                     <td>
                         <form method="get" action="borraTarjeta.jsp">
                             <input type="hidden" name="tarjeta_id" value="<%=listado.getString("tarjeta_id")%>"/>
-                            <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+                            <button type="submit"class="boton">Eliminar</button>
                         </form>
                     </td></tr>
                     <%
@@ -73,5 +74,6 @@
             <div class="names">German Zambrana Ruiz</div>
 
         </div>
+       </div>            
     </body>
 </html>

@@ -9,10 +9,10 @@
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8");%>
-        <div class="container">
+        <div>
             <br><br>
-            <div class="panel panel-info">
-                <div class="names">Modificación de tarjeta</div>
+            <div>
+                <div class="names2">Modificación de tarjeta</div>
                 <form method="get" action="grabaTarjetaModificada.jsp">
                     <div class="names"> 
                         <label>&nbsp;&nbsp;ID:&nbsp;</label><input type="text" size="5" name="tarjeta_id" value="<%= Integer.valueOf(request.getParameter("tarjeta_id"))%>" readonly>
@@ -28,7 +28,7 @@
                         <label>&nbsp;&nbsp;Precio:&nbsp;</label><input type="text" name="precio" size="20" value="<%= Double.valueOf(request.getParameter("precio"))%>">
                     </div>
                     <hr>
-                    &nbsp;&nbsp;<a href="index.jsp"><span></span>Cancelar</a>
+                    &nbsp;&nbsp;<a href="index.jsp" class="boton"><span></span>Cancelar</a>
                     <button type="submit"><span></span>Aceptar</button><br><br>
                 </form>
 
